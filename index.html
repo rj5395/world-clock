@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter any string: <input type="text" id="a"><br>
+    Result string : <input type="text" id="b"><br>
+    <input type="submit" onclick="Pal()">
+    <script type="text/javascript">
+        function Pal()
+        {
+            var x=document.getElementById("a").value;
+            var y="";
+            for (i=x.lenght;i>=0;i--)
+            {
+                y=y+x[i];
+            }
+            if(x==y)
+            document.getElementById("b").value=" is a palindrome ";
+            else
+            document.getElementById("b").value="is not a palindrome ";
+        }
+    </script> 
+</body>
+</html>
